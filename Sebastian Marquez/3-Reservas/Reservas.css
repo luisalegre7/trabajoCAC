@@ -1,0 +1,257 @@
+@font-face {
+	font-family: "Lobster";
+	src: url("../Font/Lobster/Lobster-Regular.ttf");
+  }
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.clearfix{
+	float: none;
+	clear: both;
+}
+#letras{
+	color: #fdf3d8;
+	margin-left: 15px;
+
+}
+#reservas{
+	font-size: 20px;
+	margin: 5px;
+}
+body {
+	background-image: url("../Img/Reservas1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+/* Inicio Header */
+.headerPrincipal {
+	box-shadow: 0 5px 10px rgb(0, 0, 0,0.8);
+  } 
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px ;
+	font-family: Lobster;
+	background-color: rgb(31, 35, 85,1);
+	color: white;
+	}
+.container{
+	
+    width: 100%;
+    margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto; 
+}
+.headerPrincipal-nav{
+        display: flex;
+}
+ 
+.headerPrincipal-logo{
+        margin-left: 30px;
+}     
+#Titulo{
+	display: flex;
+    color: white;
+	font-size: 3vw;
+	align-items: center;
+}
+#Titulo img{
+	padding: 1vw;
+	filter: invert(100%);
+	width: 5vw;
+	height: 5vw;
+}
+.headerPrincipal-nav-link{
+    padding: 2vw;
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    font-size: 2vw;
+} 
+.headerPrincipal-nav-link:hover {
+  color: #ffd207;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+/* Fin Header */
+/* Inicio Formulario */
+#reservas label{
+	background: rgb(31, 35, 85);
+	border-radius: 20px;
+	padding: 0.5em;
+}
+#reservas{
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+    color: #fdf3d8;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"], 
+input[type="time"], 
+select {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 1em;
+  margin: 0.5em 0;
+  width: 50%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Lobster', cursive;
+  color: #1F2355;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+input[type="submit"] {
+  background-color: #1F2355;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 0.8em;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3cff00;
+  color: black;
+  }
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+input[type="date"]:focus, 
+input[type="time"]:focus, 
+select:focus {
+  outline: none;
+  border: 0.3em solid #2437AB;
+}
+  
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+input[type="number"]:hover, 
+input[type="date"]:hover, 
+input[type="time"]:hover, 
+select:hover {
+  box-shadow: 0px 0px 20px #2437AB;
+
+ }
+ /* Final Formulario */
+ .Siguenos{
+	
+	padding: 0.5em;
+	margin-bottom: 5px;
+ }
+ footer {
+	background-color: rgb(63, 63, 63);
+	color: #fff;
+	padding: 0.5vw;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .container2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 0.5em auto;
+  }
+  
+  .social-links {
+	list-style: none;
+	display: inline-block;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .social-links li {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 20px;
+	color: #fff;
+  }
+  
+  .social-links li a {
+	display: inline-block;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+  }
+  
+  .social-links li a img {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+  }
+    
+  .social-links li a:hover img {
+	transform: scale(1.1);
+  }  
+  .Varios {
+	margin-top: 1em;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+  }
+  
+  .Varios li {
+	text-align: center;
+	margin-top: 1em;
+	margin-right: 2vw;
+	
+	font-size: 16px;
+  }
+  
+  .map-container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1vw;
+  }
+  
+  .map-container iframe {
+	width: 100%;
+	height: 25%;
+	border: none;
+  }
+
+@media (width < 768px) {
+	 .headerPrincipal-nav-link {
+	  font-size: 4vw;
+	}  
+	.map-container iframe {
+		margin-top: 0.5em;
+		width: 40vw;
+		height: 40vw;
+		margin-left: auto;
+		margin-right: auto;
+	  } 
+	.Varios{
+		margin-left: 0.3em;
+	}
+	.social-links li {
+		display: block;
+		margin-bottom: 10px;
+	  }
+	}
+	

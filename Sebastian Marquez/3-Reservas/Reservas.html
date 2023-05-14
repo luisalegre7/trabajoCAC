@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Buen Puerto-Reservas</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="Reservas.css" />
+    <!-- Mis Scripts -->
+		<script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>    
+    <!-- Cabecera -->
+    <header class="headerPrincipal">
+      <div class="container">
+          <div class="headerPrincipal-logo">
+              <span id="Titulo"><img src="../Img/LOGO.png" alt="logo" > A Buen Puerto-Reservas</span>
+          </div>
+          <nav class="headerPrincipal-nav">
+              <a class="headerPrincipal-nav-link" href="#">Home</a>
+              <a class="headerPrincipal-nav-link" href="#">Menu</a>
+              <a class="headerPrincipal-nav-link" href="#">Reservas</a>
+              <a class="headerPrincipal-nav-link" href="#">Nosotros</a>
+          </nav>
+        </div>
+    </header>
+    <form id="reservas">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="phone">Telefono:</label>
+      <input type="number" id="phone" name="phone" required>
+      
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="time">Horario:</label>
+      <input type="time" id="time" name="time" required>
+      <label for="guests">Numero de Clientes:</label>
+      <select id="guests" name="guests" required>
+        <option value="">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <input type="submit" value="Enviar" >
+     </form>
+     <footer>
+      <div class="container2">
+        <p class="Siguenos">Síguenos en:</p>
+        <ul class="social-links">
+          <li><a href="" title="Facebook"><i class="fa fa-facebook"><img src="../Img/facebook.png" alt="Facebok"><i class="fa fa-facebook"></i></a>Facebook</li>
+          <li><a href="#" title="Twitter"><i class="fa fa-twitter"><img src="../Img/gorjeo.png" alt="Twitter"></i></a>Twitter</li>
+          <li><a href="#" title="Instagram"><i class="fa fa-instagram"><img src="../Img/instagram.png" alt="Instagram"></i></a>Instagram</li>
+        </ul>
+          <ul class="Varios">
+          <li> <a href="#"></a> Dirección del restaurante</li>
+          <li>Teléfono: +123456789 </li>
+          <li>Email: restaurante@correo.com</li>
+        </ul>
+      </div>
+      <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.195186143256!2d-76.99270718496161!3d-12.129965791390332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d9f9e91d19c7%3A0x94c2c77ff6e602dd!2sPizza%20Hut!5e0!3m2!1sen!2spe!4v1615787566119!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa del restaurante"></iframe>
+      </div> 
+    </footer>  
+    
+    </body>
