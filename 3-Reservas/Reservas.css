@@ -68,7 +68,7 @@ body {
 } 
 /*Animacion Menu*/
 .headerPrincipal-nav-link:hover {
-  color: #ffd207;
+  color: #fdd243;
   text-decoration: underline;
   transform: scale(1.1);
 }
