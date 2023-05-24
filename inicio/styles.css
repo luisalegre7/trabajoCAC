@@ -1,0 +1,600 @@
+
+@font-face {
+	font-family: "Lobster";
+	src: url("Font/Lobster/Lobster-Regular.ttf");
+  }
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.clearfix{
+	float: none;
+	clear: both;
+}
+#letras{
+	color: #fdf3d8;
+	margin-left: 15px;
+
+}
+#reservas{
+	font-size: 20px;
+	margin: 5px;
+}
+body {
+	background-image: url("images/Reservas1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	  }
+
+	  button {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 10px 5px;
+		border-radius: 10px;
+		border: 2px solid rgba(0, 0, 0, 0.5);
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+		background-color: #8aa6f9;
+		
+	  }
+	  button:hover {
+		background-color: yellow;
+		
+	  }
+	  
+.Carousel{
+    width: 100%;
+    margin: 0px 60px;
+}
+.Carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+/* images */
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+}
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: .85;
+}
+
+/* buttons */
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+
+/* MENU */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+}
+
+.galeria > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria > .img-1x1 {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+    aspect-ratio: 1 / 1;
+}
+
+.galeria > .img-2x2 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    aspect-ratio: 2 / 2;
+	
+}
+
+.galeria > .img-2x1 {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+    aspect-ratio: 2 / 1;
+}
+
+img {
+    cursor: pointer;
+    border-radius: 8px;
+    filter: grayscale(1);
+    transition: .3s linear;
+}
+
+img:hover {
+    filter: grayscale(0);
+}
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/* Inicio Header */
+.headerPrincipal {
+	box-shadow: 0 5px 10px rgb(0, 0, 0,0.8);
+  } 
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px ;
+	font-family: Lobster;
+	background-color: rgb(31, 35, 85,1);
+	color: white;
+	}
+.container{
+	
+    width: 100%;
+    margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto; 
+}
+.headerPrincipal-nav{
+        display: flex;
+}
+ 
+.headerPrincipal-logo{
+        margin-left: 30px;
+}     
+#Titulo{
+	display: flex;
+    color: white;
+	font-size: 3vw;
+	align-items: center;
+}
+#Titulo img{
+	padding: 1vw;
+	filter: invert(100%);
+	width: 5vw;
+	height: 5vw;
+}
+.headerPrincipal-nav-link{
+    padding: 2vw;
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    font-size: 2vw;
+	transition: 0.7s;
+}
+.headerPrincipal-nav-link:hover {
+  color: #cfaa04f0;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+/* Fin Header */
+
+
+/*INICIO HERO*/
+
+#hero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 5em;
+	flex-direction: column;
+	height: 90vh;
+	color: white;
+	background-image: linear-gradient(0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	  ),url("Img/Salon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center ;
+  }
+  
+ 
+  #hero .h1{
+	display: flex;
+    color: white;
+	font-size: 8em;
+	align-items: center;
+  }
+  
+  /*TESTIMONIO*/
+  
+  #cuadricula{
+	  text-align: center;
+  }
+  
+    
+
+/*TESTIMONIO*/
+
+#cuadricula {
+    padding: 10px 0px 150px 0px;
+  }
+ 
+  #cuadricula h2 {
+    text-align: center;
+	font-family: "Lobster";
+	src: url("Font/Lobster/Lobster-Regular.ttf");
+
+  }
+ 
+  #cuadricula h3 {
+    color: white;
+    text-align: center;
+	
+  }
+ 
+  #cuadricula p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+
+
+  
+  #cuadricula .cuadricula-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  
+  #cuadricula .cuadricula-container .testimonio{
+    padding: 15px;
+  }
+
+  
+  .testimonio:first-child {
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)
+      ),
+      url("https://cdn.pixabay.com/photo/2016/11/29/03/36/woman-1867093_1280.jpg");
+    
+    background-position: center;
+    background-size: cover;
+  }
+
+  .testimonio:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+		rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)
+      ),
+      url("images/clientes2.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .testimonio:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)
+      ),
+      url("https://cdn.pixabay.com/photo/2017/08/12/18/31/male-2634974_1280.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .testimonio:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)
+      ),
+      url("https://cdn.pixabay.com/photo/2021/02/08/07/39/chef-5993951_1280.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .testimonio:nth-child(5) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)
+      ),
+      url("https://cdn.pixabay.com/photo/2015/11/26/22/28/woman-1064664_1280.jpg");
+    background-position: center;
+    background-size: cover;
+}
+/*FIN TESTIMONIO*/
+
+
+/*VINOS*/
+
+
+
+#marcasTrabajan {
+	background-color: rgba(30, 30, 30);
+	color: white;
+	text-align: center;
+  }
+  
+  
+  #marcasTrabajan .container {
+	padding: 150px 12px;
+  }
+  
+  
+  #marcasTrabajan h2 {
+	margin-top: 0;
+	font-size: 2.3em;
+	font-family: "Lobster";
+	src: url("Font/Lobster/Lobster-Regular.ttf");
+  }
+
+
+
+   #marcasTrabajan h3 {
+    margin-top: 0;
+  }
+  
+ 
+  
+  #marcasTrabajan p {
+	
+	display: block;
+    margin-bottom: 30px;
+  }
+  
+  
+  #marcasTrabajan .carta {
+	background-position: center center;
+	background-size: cover;
+	padding: 50px 0px;
+	margin: 20px;
+	border-radius: 15px;
+  }
+  
+  
+  .carta:first-child {
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	  ),
+	  url("Img/vinos.jpg");
+  }
+  
+  .carta:nth-child(2) {
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	  ),
+	  url("https://i1.wp.com/winecasual.com/wp-content/uploads/2019/05/IMG_3092a.jpg?fit=1348%2C1011&ssl=1");
+  }
+  
+  .carta:nth-child(3) {
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	  ),
+	  url("Img/vino\ luigi.png");
+  }
+   
+	#marcasTrabajan .programas {
+		display: flex;
+		justify-content: center;
+	  }
+	
+	  
+	  #marcasTrabajan p {
+		display: block;
+		margin-bottom: 30px;
+	  }
+	
+	  
+	
+	  #marcasTrabajan h3 {
+		margin-top: 0;
+	  }
+	  
+	  #marcasTrabajan .carta {
+		padding: 15px;
+	  }
+
+
+
+
+
+
+
+/* FIN VINOS */
+
+
+
+/*FOOTER*/
+.Siguenos{
+	
+	padding: 0.5em;
+	margin-bottom: 5px;
+ }
+
+.footer {
+	background-color: rgb(63, 63, 63, 0.4);
+	border-radius: 30px;
+	color: #fff;
+	padding-top: 40px;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	width: 80%;
+    height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .container2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 0.5em auto;
+  }
+  
+  .social-links {
+	list-style: none;
+	display: inline-block;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .social-links li {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 20px;
+	color: #fff;
+  }
+  
+  .social-links li a {
+	display: inline-block;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+  }
+  
+  .social-links li a img {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+  }
+    
+  .social-links li a:hover img {
+	transform: scale(1.1);
+  }  
+  .Varios {
+	margin-top: 1em;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+  }
+  
+  .Varios li {
+	text-align: center;
+	margin-top: 1em;
+	margin-right: 2vw;
+	
+	font-size: 16px;
+  }
+  
+  .map-container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1vw;
+  }
+  
+  .map-container iframe {
+	width: 100%;
+	height: 25%;
+	border: none;
+  }
+
+@media (width < 768px) {
+	 .headerPrincipal-nav-link {
+	  font-size: 4vw;
+	}  
+	.map-container iframe {
+		margin-top: 0.5em;
+		width: 40vw;
+		height: 40vw;
+		margin-left: auto;
+		margin-right: auto;
+	  } 
+	.Varios{
+		margin-left: 0.3em;
+	}
+	.social-links li {
+		display: block;
+		margin-bottom: 10px;
+	  }
+	}
+
+
